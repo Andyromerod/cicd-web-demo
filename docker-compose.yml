@@ -1,0 +1,10 @@
+services:
+  web-staging:
+    image: cicd-web-demo:staging
+    ports:
+      - "8081:80"
+
+  web-production:
+    image: cicd-web-demo:production
+    ports:
+      - "8082:80"
