@@ -24,7 +24,7 @@ pipeline {
 
         stage('Deploy to Staging') {
             steps {
-                sh 'docker compose up -d web-staging'
+                sh 'docker-compose up -d web-staging'
             }
         }
 
@@ -42,7 +42,7 @@ pipeline {
 
         stage('Deploy to Production') {
             steps {
-                sh 'docker compose up -d web-production'
+                sh 'docker-compose up -d web-production'
             }
         }
     }
